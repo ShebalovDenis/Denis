@@ -1,6 +1,21 @@
 package JavaWork;
 
 public class Shaker {
+	public static void main(String[] args) {
+		int[] arr = new int[1000];
+		System.out.println("Рандомный массив:");
+
+		 for(int i = 0; i < arr.length; i++){
+		   arr[i] = (int)(Math.random()*1000);
+		   System.out.print(arr[i] + " ");
+		}
+		 Shaker1(arr);
+		 System.out.println();
+		 System.out.println("Отсортированный рандомный массив:");
+		 for(int i = 0; i < arr.length; i++){
+			   System.out.print(arr[i]+" ");
+			}
+	}
 	
 	public static void Shaker1(int[] arr) {
 		int l = 0;
